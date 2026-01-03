@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+
+.form-fields{
+  display: flex;
+  flex-direction: column;
+  gap : 20px;
+  width: 50%;
+  
+
+  div{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+}
+
+.form-field{
+  margin : 20px;
+}
+
