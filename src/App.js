@@ -13,17 +13,15 @@ import ThemeContextExample from './Advanced-Concepts/ThemeContextExample';
 import { ThemeProvider } from './Advanced-Concepts/Context-api-state-patterns/ThemeContext';
 import CartExample from './Advanced-Concepts/Context-api-state-patterns/CartExample';
 import { CartProvider } from './Advanced-Concepts/Context-api-state-patterns/CartContext';
-
+import BasicCounter from './ErrorBoundary/BasicCounter';
+import Counter from './ErrorBoundary/Counter';
+import {ErrorBoundary} from "react-error-boundary";
+import ErrorFallbackComponent from './ErrorBoundary/ErrorFallbackComponent';
 
 function App() {
   return (
     <div>
-      {/* <Form/> */}
-      {/* <RegistrationForm/> */}
-      {/* <Country/> */}
-      {/* <ParentComponent/> */}
-      {/* <Routing/> */}
-     {/* <RoutingPage/> */}
+   
 
      {/* <BrowserRouter>
      <Routes>
@@ -37,9 +35,24 @@ function App() {
       <ThemeContextExample/>
      </ThemeProvider> */}
 
-     <CartProvider>
+     {/* <CartProvider>
          <CartExample/>
-     </CartProvider>
+     </CartProvider> */}
+
+
+      <ErrorBoundary FallbackComponent={ErrorFallbackComponent}>
+         {/* <ErrorBoundary fallbackRender={({error, resetErrorBoundary}) => {
+           return(
+        <div>
+            <p>Something went wrong</p>
+            <p>{error.message}</p>
+            <button onClick={resetErrorBoundary}>Try Again</button>
+        </div>
+    )
+         }}> */}
+        <Counter/>
+      </ErrorBoundary>
+    
 
     
 
