@@ -1,5 +1,7 @@
 const ErrorFallbackComponent = ({error, resetErrorBoundary}) => {
 
+    console.log(error);
+
     return(
         <div>
             <p>Something went wrong</p>

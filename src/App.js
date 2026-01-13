@@ -17,6 +17,7 @@ import BasicCounter from './ErrorBoundary/BasicCounter';
 import Counter from './ErrorBoundary/Counter';
 import {ErrorBoundary} from "react-error-boundary";
 import ErrorFallbackComponent from './ErrorBoundary/ErrorFallbackComponent';
+import ErrorBoundaryComponent from './ErrorBoundary/StateRecovery/ErrorBoundaryComponent';
 
 function App() {
   return (
@@ -40,7 +41,12 @@ function App() {
      </CartProvider> */}
 
 
-      <ErrorBoundary FallbackComponent={ErrorFallbackComponent}>
+
+ {/* <ErrorBoundary FallbackComponent={ErrorFallbackComponent} onError={(error,componentStack)=>{
+  //library
+ }}></ErrorBoundary> */}
+
+    
          {/* <ErrorBoundary fallbackRender={({error, resetErrorBoundary}) => {
            return(
         <div>
@@ -50,10 +56,11 @@ function App() {
         </div>
     )
          }}> */}
+      {/* <ErrorBoundary FallbackComponent={ErrorFallbackComponent}>
         <Counter/>
-      </ErrorBoundary>
+      </ErrorBoundary> */}
     
-
+      <ErrorBoundaryComponent/>
     
 
      
