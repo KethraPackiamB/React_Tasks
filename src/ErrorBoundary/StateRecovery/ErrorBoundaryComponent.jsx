@@ -7,8 +7,8 @@ const ErrorBoundaryComponent = () => {
 
     const [message, setMessage] = useState("");
 
-    const handleSubmit = (payload) => {
-        setMessage(payload);
+    const handleSubmit = () => {
+        setMessage();
     }
 
     return(

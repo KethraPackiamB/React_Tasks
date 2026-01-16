@@ -18,10 +18,7 @@ const [data, setData] = useState({
         setData({...data, [key]:e.target.value});
         }
 
-   
-
-    
-return(
+    return(
         <div className="form-fields">
             <div> 
                 <label htmlFor="firstName">First Name :</label>

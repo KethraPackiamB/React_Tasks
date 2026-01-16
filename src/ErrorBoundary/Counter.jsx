@@ -8,7 +8,6 @@ const Counter = () => {
         throw new Error("Danger Zone");
     }
 
-   
     const handleCount = () => {
         setCount((prev)=>prev+1);
     }

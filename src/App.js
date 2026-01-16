@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Form from "./Form";
-import RegistrationForm from "./RegistrationForm";
+// import RegistrationForm from "./RegistrationForm";
 import Country from "./Components/Country";
 import ParentComponent from './Props/ParentComponent';
 import Routing from './React-Router/Routing';
@@ -12,12 +12,15 @@ import DisplayProductDetails from './UseSearchParams/DisplayProductDetails';
 import ThemeContextExample from './Advanced-Concepts/ThemeContextExample';
 import { ThemeProvider } from './Advanced-Concepts/Context-api-state-patterns/ThemeContext';
 import CartExample from './Advanced-Concepts/Context-api-state-patterns/CartExample';
-import { CartProvider } from './Advanced-Concepts/Context-api-state-patterns/CartContext';
+// import { CartProvider } from './Advanced-Concepts/Context-api-state-patterns/CartContext';
 import BasicCounter from './ErrorBoundary/BasicCounter';
 import Counter from './ErrorBoundary/Counter';
 import {ErrorBoundary} from "react-error-boundary";
 import ErrorFallbackComponent from './ErrorBoundary/ErrorFallbackComponent';
 import ErrorBoundaryComponent from './ErrorBoundary/StateRecovery/ErrorBoundaryComponent';
+import RegistrationForm from './EventHandleForm/RegistrationForm';
+import Routers from './React_Tasks_Practice/Routers';
+import { CartProvider } from './React_Tasks_Practice/CartContext';
 
 function App() {
   return (
@@ -60,9 +63,14 @@ function App() {
         <Counter/>
       </ErrorBoundary> */}
     
-      <ErrorBoundaryComponent/>
+      {/* <ErrorBoundaryComponent/> */}
     
 
+        {/* <RegistrationForm/> */}
+
+
+        <Routers/>
+      
      
     
     </div>
