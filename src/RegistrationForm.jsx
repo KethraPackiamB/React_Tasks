@@ -20,6 +20,7 @@ const RegistrationForm = () => {
     e.preventDefault();
     console.log(data);
     setSubmittedData(data);
+    localStorage.setItem("Submitted_Data", JSON.stringify(data));
   };
 
   const handleReset = () => {

@@ -19,7 +19,7 @@ const CartReducer = (state,action) => {
 }
 
 export const CartProvider = ({children}) => {
-    const [cart, dispatch] = useReducer(CartReducer, [
+    const [cart, dispatch] = useReducer(CartReducer,[
         {id :1, name : "Apple"},
         {id :2, name : "Banana"}
     ]);

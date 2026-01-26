@@ -27,7 +27,10 @@ const navigate = useNavigate();
             <h1>Display Product Details</h1>
             {products.map((product)=>{
                 return(
-                <button key={product.id} onClick={()=>{ navigate(`/display-product-details/${product.id}?name=${product.label}&category=${product.category}`);}}>{product.label}</button>
+                <button key={product.id} 
+                onClick={()=>{ 
+                    navigate(`/display-product-details/${product.id}?name=${product.label}&category=${product.category}`);
+                }}>{product.label}</button>
                 )
             })}
         </div>
