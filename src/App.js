@@ -31,8 +31,9 @@ import UserDetailsForm from './Form/UserDetailsForm';
 import LocationSelector from './CountryStateCitySelection/LocationSelector';
 import CountryLocation from './CountryStateCitySelection/CountryLocation';
 import { ListCloth } from './ArrayOperations/ListCloth';
-
-
+import CharacterStatusEffects from './Hooks/CharacterStatusEffects';
+import UseState from './Hooks/UseState';
+import TreeStages from './Hooks/TreeStages';
 
 function App() {
   return (
@@ -105,8 +106,11 @@ function App() {
 
       {/* <CountryLocation/> */}
 
-      <ListCloth/>
-      
+      {/* <ListCloth/> */}
+
+      {/* <CharacterStatusEffects/> */}
+      <UseState/>
+      {/* <TreeStages/> */}
      
     
     </div>
