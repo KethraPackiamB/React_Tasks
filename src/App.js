@@ -34,6 +34,19 @@ import { ListCloth } from './ArrayOperations/ListCloth';
 import CharacterStatusEffects from './Hooks/CharacterStatusEffects';
 import UseState from './Hooks/UseState';
 import TreeStages from './Hooks/TreeStages';
+import UseEffect from './Hooks/UseEffect';
+import { PreferencesProvider } from './Hooks/ContextAPI/PreferencesContext';
+import PreferencesPanel from './Hooks/ContextAPI/PreferencesPanel';
+import Content from './Hooks/ContextAPI/Content';
+import UseRef from './Hooks/UseRef';
+import VideoPlayer from './Hooks/VideoPlayer';
+import CharacterCounter from './Hooks/CharacterCounter';
+import ShoppingCart from './Hooks/ShoppingCart';
+import CounterWithRef from './Hooks/CounterWithRef';
+import InputFocus from './Hooks/InputFocus';
+import PreviousStatebyUseRef from './Hooks/PreviousStatebyUseRef';
+import WordsCounter from './Hooks/WordsCounter';
+
 
 function App() {
   return (
@@ -109,10 +122,28 @@ function App() {
       {/* <ListCloth/> */}
 
       {/* <CharacterStatusEffects/> */}
-      <UseState/>
+      {/* <UseState/> */}
       {/* <TreeStages/> */}
-     
     
+     {/* <UseEffect/> */}
+
+     {/* <PreferencesProvider>
+      <div style={{ width: "400px", margin: "40px auto" }}>
+        <PreferencesPanel />
+        <Content />
+      </div>
+    </PreferencesProvider> */}
+
+    {/* <UseRef/> */}
+
+    {/* <VideoPlayer/> */}
+
+    {/* <CharacterCounter/> */}
+    {/* <ShoppingCart/> */}
+    {/* <CounterWithRef/> */}
+    {/* <InputFocus/> */}
+    {/* <PreviousStatebyUseRef/> */}
+    <WordsCounter/>
     </div>
   );
 }
