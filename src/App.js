@@ -46,6 +46,8 @@ import CounterWithRef from './Hooks/CounterWithRef';
 import InputFocus from './Hooks/InputFocus';
 import PreviousStatebyUseRef from './Hooks/PreviousStatebyUseRef';
 import WordsCounter from './Hooks/WordsCounter';
+import TraditionalDomAccess from './Hooks/TraditionalDomAccess';
+import UseTransitionExample from './Hooks/UseTransitionExample';
 
 
 function App() {
@@ -143,7 +145,9 @@ function App() {
     {/* <CounterWithRef/> */}
     {/* <InputFocus/> */}
     {/* <PreviousStatebyUseRef/> */}
-    <WordsCounter/>
+    {/* <WordsCounter/> */}
+    {/* <TraditionalDomAccess/> */}
+    <UseTransitionExample/>
     </div>
   );
 }

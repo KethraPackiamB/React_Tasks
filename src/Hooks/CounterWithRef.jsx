@@ -4,6 +4,7 @@ const CounterWithRef = () => {
 
     const [counter, setCounter] = useState(0);
     const counterRef = useRef(0);
+    console.log(counterRef)
 
     const handleIncrement = () => {
         setCounter(prev => prev+1);

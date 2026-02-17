@@ -7,8 +7,6 @@ console.log(props);
             <p>{props.continent} is my Country.</p>
             <p>{props.ocean} is the biggest ocean</p>
            
-
-           
         </div>
     )
 }
