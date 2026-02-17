@@ -28,8 +28,10 @@ const UseTransitionExample = () => {
 
        {isPending && <p>Loading...</p>}
 
+       {!isPending && filteredList.length === 0 && <p>No results found</p>}
+
        <ul>
-        {filteredList.slice(0,50).map((item, index)=>(<li key={index}>{item}</li>))}
+        {filteredList.slice(0,10).map((item, index)=>(<li key={index}>{item}</li>))}
        </ul>
     </div>
   )

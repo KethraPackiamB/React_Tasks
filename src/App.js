@@ -141,13 +141,13 @@ function App() {
     {/* <VideoPlayer/> */}
 
     {/* <CharacterCounter/> */}
-    {/* <ShoppingCart/> */}
+    <ShoppingCart/>
     {/* <CounterWithRef/> */}
     {/* <InputFocus/> */}
     {/* <PreviousStatebyUseRef/> */}
     {/* <WordsCounter/> */}
     {/* <TraditionalDomAccess/> */}
-    <UseTransitionExample/>
+    {/* <UseTransitionExample/> */}
     </div>
   );
 }

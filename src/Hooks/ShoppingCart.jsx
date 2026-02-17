@@ -1,4 +1,5 @@
 import { useReducer } from "react";
+import { ADD_TO_CART, INCREASE_QTY, DECREASE_QTY, REMOVE_ITEM, CLEAR_CART } from "./shoppingCartActionType";
 
 // Initial State
 const initialState = {
@@ -9,7 +10,7 @@ const initialState = {
 // Reducer Function
 const cartReducer = (state, action) => {
   switch (action.type) {
-    case "ADD_TO_CART": {
+    case ADD_TO_CART: {
       const existingItem = state.cart.find(
         (item) => item.id === action.payload.id
       );
@@ -31,7 +32,7 @@ const cartReducer = (state, action) => {
       };
     }
 
-    case "INCREASE_QTY":
+    case INCREASE_QTY:
       return {
         ...state,
         cart: state.cart.map((item) =>
@@ -41,7 +42,7 @@ const cartReducer = (state, action) => {
         ),
       };
 
-    case "DECREASE_QTY":
+    case DECREASE_QTY:
       return {
         ...state,
         cart: state.cart
@@ -53,13 +54,13 @@ const cartReducer = (state, action) => {
           .filter((item) => item.quantity > 0),
       };
 
-    case "REMOVE_ITEM":
+    case REMOVE_ITEM:
       return {
         ...state,
         cart: state.cart.filter((item) => item.id !== action.payload),
       };
 
-    case "CLEAR_CART":
+    case CLEAR_CART:
       return initialState;
 
     default:
